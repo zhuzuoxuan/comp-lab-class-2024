@@ -1,0 +1,203 @@
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+srun: error: cm044: task 0: Exited with exit code 2
+srun: Terminating StepId=51361099.0
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+srun: error: cm044: tasks 0-23: Exited with exit code 2
+srun: Terminating StepId=51361099.1
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+srun: error: cm044: task 0: Exited with exit code 2
+srun: Terminating StepId=51361099.2
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+srun: error: cm044: tasks 0-23: Exited with exit code 2
+srun: Terminating StepId=51361099.3
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+srun: error: cm044: task 0: Exited with exit code 2
+srun: Terminating StepId=51361099.4
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+srun: error: cm044: tasks 0-23: Exited with exit code 2
+srun: Terminating StepId=51361099.5
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+srun: error: cm044: task 0: Exited with exit code 2
+srun: Terminating StepId=51361099.6
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+srun: error: cm044: tasks 0-23: Exited with exit code 2
+srun: Terminating StepId=51361099.7
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+srun: error: cm044: task 0: Exited with exit code 2
+srun: Terminating StepId=51361099.8
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+srun: error: cm044: tasks 0-23: Exited with exit code 2
+srun: Terminating StepId=51361099.9
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+srun: error: cm044: task 0: Exited with exit code 2
+srun: Terminating StepId=51361099.10
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+srun: error: cm044: tasks 0-23: Exited with exit code 2
+srun: Terminating StepId=51361099.11
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+srun: error: cm044: task 0: Exited with exit code 2
+srun: Terminating StepId=51361099.12
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+slurmstepd: error: execve(): gmx_mpi: No such file or directory
+srun: error: cm044: tasks 0-23: Exited with exit code 2
+srun: Terminating StepId=51361099.13

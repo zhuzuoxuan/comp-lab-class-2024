@@ -1,0 +1,1225 @@
+                      :-) GROMACS - gmx mdrun, 2023.3 (-:
+
+Copyright 1991-2023 The GROMACS Authors.
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+                         Current GROMACS contributors:
+       Mark Abraham           Andrey Alekseenko           Cathrine Bergh      
+      Christian Blau            Eliane Briand             Mahesh Doijade      
+    Stefan Fleischmann           Vytas Gapsys              Gaurav Garg        
+      Sergey Gorelov         Gilles Gouaillardet            Alan Gray         
+     M. Eric Irrgang         Farzaneh Jalalypour            Joe Jordan        
+    Christoph Junghans        Prashanth Kanduri          Sebastian Keller     
+     Carsten Kutzner           Justin A. Lemkul          Magnus Lundborg      
+       Pascal Merz              Vedran Miletic            Dmitry Morozov      
+       Szilard Pall             Roland Schulz             Michael Shirts      
+     Alexey Shvetsov            Balint Soproni         David van der Spoel    
+      Philip Turner             Carsten Uphoff           Alessandra Villa     
+ Sebastian Wingbermuehle        Artem Zhmurov       
+
+                         Previous GROMACS contributors:
+        Emile Apol             Rossen Apostolov           James Barnett       
+  Herman J.C. Berendsen          Par Bjelkmar           Viacheslav Bolnykh    
+        Kevin Boyd            Aldert van Buuren          Carlo Camilloni      
+     Rudi van Drunen            Anton Feenstra           Oliver Fleetwood     
+     Gerrit Groenhof            Bert de Groot             Anca Hamuraru       
+    Vincent Hindriksen          Victor Holanda           Aleksei Iupinov      
+   Dimitrios Karkoulis           Peter Kasson             Sebastian Kehl      
+        Jiri Kraus               Per Larsson              Viveca Lindahl      
+      Erik Marklund           Pieter Meulenhoff           Teemu Murtola       
+       Sander Pronk             Alfons Sijbers            Peter Tieleman      
+       Jon Vincent             Teemu Virolainen         Christian Wennberg    
+       Maarten Wolf       
+
+                  Coordinated by the GROMACS project leaders:
+                    Paul Bauer, Berk Hess, and Erik Lindahl
+
+GROMACS:      gmx mdrun, version 2023.3
+Executable:   /ext3/apps/gromacs/2023.3/openmpi/intel/bin/gmx_mpi
+Data prefix:  /ext3/apps/gromacs/2023.3/openmpi/intel
+Working dir:  /scratch/work/courses/CHEM-GA-2671-2024fa/students/zz10074/comp-lab-class-2024/Week4-CharmmGuiSetup/Setup/Ions_in_water_CHARMM36M/gromacs
+Process ID:   817436
+Command line:
+  gmx_mpi mdrun -v -deffnm step4.1_equilibration
+
+GROMACS version:    2023.3
+Precision:          mixed
+Memory model:       64 bit
+MPI library:        MPI
+OpenMP support:     disabled
+GPU support:        disabled
+SIMD instructions:  AVX2_256
+CPU FFT library:    fftw-3.3.8-sse2-avx-avx2-avx2_128
+GPU FFT library:    none
+Multi-GPU FFT:      none
+RDTSCP usage:       enabled
+TNG support:        enabled
+Hwloc support:      disabled
+Tracing support:    disabled
+C compiler:         /share/apps/utils/intel/icc Intel 2021.5.0.20211109
+C compiler flags:   -mavx2 -mfma -pthread -O3 -DNDEBUG
+C++ compiler:       /share/apps/utils/intel/icpc Intel 2021.5.0.20211109
+C++ compiler flags: -mavx2 -mfma -pthread -O3 -DNDEBUG
+BLAS library:       External - detected on the system
+LAPACK library:     External - detected on the system
+
+
+Running on 1 node with total 24 cores, 24 processing units
+Hardware detected on host cs010.hpc.nyu.edu (the node of MPI rank 0):
+  CPU info:
+    Vendor: Intel
+    Brand:  Intel(R) Xeon(R) Platinum 8268 CPU @ 2.90GHz
+    Family: 6   Model: 85   Stepping: 7
+    Features: aes apic avx avx2 avx512f avx512cd avx512bw avx512vl avx512secondFMA clfsh cmov cx8 cx16 f16c fma htt intel lahf mmx msr nonstop_tsc pcid pclmuldq pdcm pdpe1gb popcnt pse rdrnd rdtscp sse2 sse3 sse4.1 sse4.2 ssse3 tdt x2apic
+    Number of AVX-512 FMA units: 2
+  Hardware topology: Basic
+    Packages, cores, and logical processors:
+    [indices refer to OS logical processors]
+      Package  0: [   0] [   1] [   3] [   4] [   5] [   6] [   7] [   8] [   9] [  10] [  11] [  12] [  13] [  14] [  15] [  16] [  17] [  18] [  19] [  20]
+      Package  1: [  27] [  28] [  29] [  30]
+    CPU limit set by OS: -1   Recommended max number of threads: 24
+
+Likely fastest SIMD instructions supported by all nodes: AVX_512
+SIMD instructions selected at compile time:              AVX2_256
+Merely a note: it is unfortunately hard to know for sure which SIMD
+instructons will perform best on this hardware. For non-GPU runs
+on Intel CPUs with dual AVX-512 units, using AVX-512 can be good,
+while AVX2 is often better for runs also using a GPU. Typically
+this is just a few percent, so don't worry unless you are tuning.
+
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+M. J. Abraham, T. Murtola, R. Schulz, S. Páll, J. C. Smith, B. Hess, E.
+Lindahl
+GROMACS: High performance molecular simulations through multi-level
+parallelism from laptops to supercomputers
+SoftwareX 1 (2015) pp. 19-25
+-------- -------- --- Thank You --- -------- --------
+
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+S. Páll, M. J. Abraham, C. Kutzner, B. Hess, E. Lindahl
+Tackling Exascale Software Challenges in Molecular Dynamics Simulations with
+GROMACS
+In S. Markidis & E. Laure (Eds.), Solving Software Challenges for Exascale 8759 (2015) pp. 3-27
+-------- -------- --- Thank You --- -------- --------
+
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+S. Pronk, S. Páll, R. Schulz, P. Larsson, P. Bjelkmar, R. Apostolov, M. R.
+Shirts, J. C. Smith, P. M. Kasson, D. van der Spoel, B. Hess, and E. Lindahl
+GROMACS 4.5: a high-throughput and highly parallel open source molecular
+simulation toolkit
+Bioinformatics 29 (2013) pp. 845-54
+-------- -------- --- Thank You --- -------- --------
+
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+B. Hess and C. Kutzner and D. van der Spoel and E. Lindahl
+GROMACS 4: Algorithms for highly efficient, load-balanced, and scalable
+molecular simulation
+J. Chem. Theory Comput. 4 (2008) pp. 435-447
+-------- -------- --- Thank You --- -------- --------
+
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+D. van der Spoel, E. Lindahl, B. Hess, G. Groenhof, A. E. Mark and H. J. C.
+Berendsen
+GROMACS: Fast, Flexible and Free
+J. Comp. Chem. 26 (2005) pp. 1701-1719
+-------- -------- --- Thank You --- -------- --------
+
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+E. Lindahl and B. Hess and D. van der Spoel
+GROMACS 3.0: A package for molecular simulation and trajectory analysis
+J. Mol. Mod. 7 (2001) pp. 306-317
+-------- -------- --- Thank You --- -------- --------
+
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+H. J. C. Berendsen, D. van der Spoel and R. van Drunen
+GROMACS: A message-passing parallel molecular dynamics implementation
+Comp. Phys. Comm. 91 (1995) pp. 43-56
+-------- -------- --- Thank You --- -------- --------
+
+
+++++ PLEASE CITE THE DOI FOR THIS VERSION OF GROMACS ++++
+https://doi.org/10.5281/zenodo.10017686
+-------- -------- --- Thank You --- -------- --------
+
+Input Parameters:
+   integrator                     = md
+   tinit                          = 0
+   dt                             = 0.001
+   nsteps                         = 125000
+   init-step                      = 0
+   simulation-part                = 1
+   mts                            = false
+   comm-mode                      = Linear
+   nstcomm                        = 100
+   bd-fric                        = 0
+   ld-seed                        = -155648522
+   emtol                          = 10
+   emstep                         = 0.01
+   niter                          = 20
+   fcstep                         = 0
+   nstcgsteep                     = 1000
+   nbfgscorr                      = 10
+   rtpi                           = 0.05
+   nstxout                        = 0
+   nstvout                        = 0
+   nstfout                        = 0
+   nstlog                         = 1000
+   nstcalcenergy                  = 100
+   nstenergy                      = 1000
+   nstxout-compressed             = 5000
+   compressed-x-precision         = 1000
+   cutoff-scheme                  = Verlet
+   nstlist                        = 20
+   pbc                            = xyz
+   periodic-molecules             = false
+   verlet-buffer-tolerance        = 0.005
+   rlist                          = 1.2
+   coulombtype                    = PME
+   coulomb-modifier               = Potential-shift
+   rcoulomb-switch                = 0
+   rcoulomb                       = 1.2
+   epsilon-r                      = 1
+   epsilon-rf                     = inf
+   vdw-type                       = Cut-off
+   vdw-modifier                   = Force-switch
+   rvdw-switch                    = 1
+   rvdw                           = 1.2
+   DispCorr                       = No
+   table-extension                = 1
+   fourierspacing                 = 0.12
+   fourier-nx                     = 42
+   fourier-ny                     = 42
+   fourier-nz                     = 42
+   pme-order                      = 4
+   ewald-rtol                     = 1e-05
+   ewald-rtol-lj                  = 0.001
+   lj-pme-comb-rule               = Geometric
+   ewald-geometry                 = 3d
+   epsilon-surface                = 0
+   ensemble-temperature-setting   = constant
+   ensemble-temperature           = 310
+   tcoupl                         = V-rescale
+   nsttcouple                     = 100
+   nh-chain-length                = 0
+   print-nose-hoover-chain-variables = false
+   pcoupl                         = No
+   pcoupltype                     = Isotropic
+   nstpcouple                     = -1
+   tau-p                          = 1
+   compressibility (3x3):
+      compressibility[    0]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+      compressibility[    1]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+      compressibility[    2]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   ref-p (3x3):
+      ref-p[    0]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+      ref-p[    1]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+      ref-p[    2]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   refcoord-scaling               = No
+   posres-com (3):
+      posres-com[0]= 0.00000e+00
+      posres-com[1]= 0.00000e+00
+      posres-com[2]= 0.00000e+00
+   posres-comB (3):
+      posres-comB[0]= 0.00000e+00
+      posres-comB[1]= 0.00000e+00
+      posres-comB[2]= 0.00000e+00
+   QMMM                           = false
+qm-opts:
+   ngQM                           = 0
+   constraint-algorithm           = Lincs
+   continuation                   = false
+   Shake-SOR                      = false
+   shake-tol                      = 0.0001
+   lincs-order                    = 4
+   lincs-iter                     = 1
+   lincs-warnangle                = 30
+   nwall                          = 0
+   wall-type                      = 9-3
+   wall-r-linpot                  = -1
+   wall-atomtype[0]               = -1
+   wall-atomtype[1]               = -1
+   wall-density[0]                = 0
+   wall-density[1]                = 0
+   wall-ewald-zfac                = 3
+   pull                           = false
+   awh                            = false
+   rotation                       = false
+   interactiveMD                  = false
+   disre                          = No
+   disre-weighting                = Conservative
+   disre-mixed                    = false
+   dr-fc                          = 1000
+   dr-tau                         = 0
+   nstdisreout                    = 100
+   orire-fc                       = 0
+   orire-tau                      = 0
+   nstorireout                    = 100
+   free-energy                    = no
+   cos-acceleration               = 0
+   deform (3x3):
+      deform[    0]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+      deform[    1]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+      deform[    2]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   simulated-tempering            = false
+   swapcoords                     = no
+   userint1                       = 0
+   userint2                       = 0
+   userint3                       = 0
+   userint4                       = 0
+   userreal1                      = 0
+   userreal2                      = 0
+   userreal3                      = 0
+   userreal4                      = 0
+   applied-forces:
+     electric-field:
+       x:
+         E0                       = 0
+         omega                    = 0
+         t0                       = 0
+         sigma                    = 0
+       y:
+         E0                       = 0
+         omega                    = 0
+         t0                       = 0
+         sigma                    = 0
+       z:
+         E0                       = 0
+         omega                    = 0
+         t0                       = 0
+         sigma                    = 0
+     density-guided-simulation:
+       active                     = false
+       group                      = protein
+       similarity-measure         = inner-product
+       atom-spreading-weight      = unity
+       force-constant             = 1e+09
+       gaussian-transform-spreading-width = 0.2
+       gaussian-transform-spreading-range-in-multiples-of-width = 4
+       reference-density-filename = reference.mrc
+       nst                        = 1
+       normalize-densities        = true
+       adaptive-force-scaling     = false
+       adaptive-force-scaling-time-constant = 4
+       shift-vector               = 
+       transformation-matrix      = 
+     qmmm-cp2k:
+       active                     = false
+       qmgroup                    = System
+       qmmethod                   = PBE
+       qmfilenames                = 
+       qmcharge                   = 0
+       qmmultiplicity             = 1
+grpopts:
+   nrdf:       23319
+   ref-t:         310
+   tau-t:           1
+annealing:          No
+annealing-npoints:           0
+   acc:	           0           0           0
+   nfreeze:           N           N           N
+   energygrp-flags[  0]: 0
+
+Changing nstlist from 20 to 100, rlist from 1.2 to 1.3
+
+
+Initializing Domain Decomposition on 24 ranks
+Dynamic load balancing: auto
+Using update groups, nr 3894, average size 3.0 atoms, max. radius 0.078 nm
+Minimum cell size due to atom displacement: 0.301 nm
+Scaling the initial minimum size with 1/0.8 (option -dds) = 1.25
+Guess for relative PME load: 0.15
+Will use 20 particle-particle and 4 PME only ranks
+This is a guess, check the performance at the end of the log file
+Using 4 separate PME ranks, as guessed by mdrun
+Optimizing the DD grid for 20 cells with a minimum initial size of 0.376 nm
+The maximum allowed number of cells is: X 13 Y 13 Z 13
+Domain decomposition grid 4 x 5 x 1, separate PME ranks 4
+PME domain decomposition: 4 x 1 x 1
+Interleaving PP and PME ranks
+This rank does only particle-particle work.
+Domain decomposition rank 0, coordinates 0 0 0
+
+The initial number of communication pulses is: X 2 Y 2
+The initial domain decomposition cell size is: X 1.25 nm Y 1.00 nm
+
+When dynamic load balancing gets turned on, these settings will change to:
+The maximum number of communication pulses is: X 2 Y 2
+The minimum size for domain decomposition cells is 0.728 nm
+The requested allowed shrink of DD cells (option -dds) is: 0.80
+The allowed shrink of domain decomposition cells is: X 0.58 Y 0.73
+
+Using 24 MPI processes
+
+Non-default thread affinity set, disabling internal thread affinity
+System total charge: 0.000
+Will do PME sum in reciprocal space for electrostatic interactions.
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+U. Essmann, L. Perera, M. L. Berkowitz, T. Darden, H. Lee and L. G. Pedersen 
+A smooth particle mesh Ewald method
+J. Chem. Phys. 103 (1995) pp. 8577-8592
+-------- -------- --- Thank You --- -------- --------
+
+Using a Gaussian width (1/beta) of 0.384195 nm for Ewald
+Potential shift: LJ r^-12: -2.648e-01 r^-6: -5.349e-01, Ewald -8.333e-06
+Initialized non-bonded Coulomb Ewald tables, spacing: 1.02e-03 size: 1176
+
+
+
+Using SIMD 4x8 nonbonded short-range kernels
+
+Using a dual 4x8 pair-list setup updated with dynamic pruning:
+  outer list: updated every 100 steps, buffer 0.100 nm, rlist 1.300 nm
+  inner list: updated every  23 steps, buffer 0.001 nm, rlist 1.201 nm
+At tolerance 0.005 kJ/mol/ps per atom, equivalent classical 1x1 list would be:
+  outer list: updated every 100 steps, buffer 0.230 nm, rlist 1.430 nm
+  inner list: updated every  23 steps, buffer 0.048 nm, rlist 1.248 nm
+
+The non-bonded pair calculation algorithm tolerates a few missing pair interactions close to the cut-off. This can lead to a systematic overestimation of the pressure due to missing LJ interactions. The error in the average pressure due to missing LJ interactions is at most 0.03 bar.
+The pressure error can be controlled by setting the environment variable GMX_VERLET_BUFFER_PRESSURE_TOLERANCE to the allowed error in units of bar.
+Removing pbc first time
+
+Linking all bonded interactions to atoms
+
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+S. Miyamoto and P. A. Kollman
+SETTLE: An Analytical Version of the SHAKE and RATTLE Algorithms for Rigid
+Water Models
+J. Comp. Chem. 13 (1992) pp. 952-962
+-------- -------- --- Thank You --- -------- --------
+
+
+Intra-simulation communication will occur every 100 steps.
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+G. Bussi, D. Donadio and M. Parrinello
+Canonical sampling through velocity rescaling
+J. Chem. Phys. 126 (2007) pp. 014101
+-------- -------- --- Thank You --- -------- --------
+
+There are: 11654 Atoms
+Atom distribution over 20 domains: av 582 stddev 39 min 534 max 639
+
+Constraining the starting coordinates (step 0)
+
+Constraining the coordinates at t0-dt (step 0)
+Center of mass motion removal mode is Linear
+We have the following groups for center of mass motion removal:
+  0:  SOLV
+RMS relative constraint deviation after constraining: 0.00e+00
+Initial temperature: 308.692 K
+
+Started mdrun on rank 0 Wed Oct  2 23:29:33 2024
+
+           Step           Time
+              0        0.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    2.71261e+04   -2.15276e+05    6.35336e+02   -1.87514e+05    2.99324e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.57582e+05   -1.57582e+05    3.08765e+02   -9.67556e+02
+
+
+DD  step 99 load imb.: force 20.8%  pme mesh/force 2.670
+step  600: timed with pme grid 42 42 42, coulomb cutoff 1.200: 190295.8 M-cycles
+step  800: timed with pme grid 36 36 36, coulomb cutoff 1.389: 190607.7 M-cycles
+step 1000: timed with pme grid 32 32 32, coulomb cutoff 1.563: 190183.8 M-cycles
+
+DD  step 999 load imb.: force 37.1%  pme mesh/force 2.582
+           Step           Time
+           1000        1.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    2.02972e+04   -1.92794e+05    1.41382e+02   -1.72355e+05    2.30225e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.49333e+05   -1.57534e+05    2.37486e+02   -1.57892e+03
+
+step 1200: timed with pme grid 28 28 28, coulomb cutoff 1.786: 177380.9 M-cycles
+step 1200: the domain decomposition limits the PME load balancing to a coulomb cut-off of 1.786
+Writing checkpoint, step 1300 at Wed Oct  2 23:46:50 2024
+
+
+step 1400: timed with pme grid 28 28 28, coulomb cutoff 1.786: 179390.7 M-cycles
+step 1600: timed with pme grid 32 32 32, coulomb cutoff 1.563: 189943.8 M-cycles
+step 1800: timed with pme grid 36 36 36, coulomb cutoff 1.389: 191160.1 M-cycles
+step 2000: timed with pme grid 40 40 40, coulomb cutoff 1.250: 190090.2 M-cycles
+
+DD  step 1999 load imb.: force 33.6%  pme mesh/force 2.481
+           Step           Time
+           2000        2.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.98018e+04   -1.89785e+05    4.88471e+02   -1.69495e+05    2.56293e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.43865e+05   -1.57537e+05    2.64376e+02   -1.24985e+03
+
+step 2200: timed with pme grid 42 42 42, coulomb cutoff 1.200: 190192.3 M-cycles
+              optimal pme grid 28 28 28, coulomb cutoff 1.786
+Writing checkpoint, step 2400 at Thu Oct  3 00:01:25 2024
+
+
+
+DD  step 2999 load imb.: force 14.1%  pme mesh/force 2.558
+           Step           Time
+           3000        3.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.86531e+04   -1.85351e+05    1.32311e+02   -1.66566e+05    2.69370e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.39629e+05   -1.57539e+05    2.77866e+02   -1.34672e+03
+
+Writing checkpoint, step 3600 at Thu Oct  3 00:16:15 2024
+
+
+
+DD  step 3999 load imb.: force 18.3%  pme mesh/force 2.490
+           Step           Time
+           4000        4.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.78011e+04   -1.82079e+05    1.33570e+02   -1.64144e+05    2.73337e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.36810e+05   -1.57540e+05    2.81958e+02   -1.29485e+03
+
+Writing checkpoint, step 4800 at Thu Oct  3 00:31:03 2024
+
+
+
+DD  step 4999 load imb.: force 22.8%  pme mesh/force 2.580
+           Step           Time
+           5000        5.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.75336e+04   -1.80820e+05    1.60172e+02   -1.63126e+05    2.83432e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.34783e+05   -1.57541e+05    2.92371e+02   -1.19666e+03
+
+
+DD  step 5999 load imb.: force 29.3%  pme mesh/force 2.385
+           Step           Time
+           6000        6.00000
+
+Writing checkpoint, step 6000 at Thu Oct  3 00:45:51 2024
+
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.80882e+04   -1.80765e+05    1.39602e+02   -1.62538e+05    2.86542e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.33883e+05   -1.57543e+05    2.95579e+02   -8.47403e+02
+
+
+DD  step 6999 load imb.: force 18.6%  pme mesh/force 2.490
+           Step           Time
+           7000        7.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.75918e+04   -1.79362e+05    1.49003e+02   -1.61622e+05    2.87752e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.32846e+05   -1.57546e+05    2.96827e+02   -8.47010e+02
+
+Writing checkpoint, step 7300 at Thu Oct  3 01:01:54 2024
+
+
+
+DD  step 7999 load imb.: force 41.0%  pme mesh/force 2.234
+           Step           Time
+           8000        8.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.64745e+04   -1.77157e+05    1.55616e+02   -1.60527e+05    2.90333e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.31494e+05   -1.57548e+05    2.99490e+02   -1.26108e+03
+
+Writing checkpoint, step 8500 at Thu Oct  3 01:16:42 2024
+
+
+
+DD  step 8999 load imb.: force 33.8%  pme mesh/force 2.350
+           Step           Time
+           9000        9.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.73778e+04   -1.77741e+05    1.63065e+02   -1.60200e+05    2.98770e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.30323e+05   -1.57550e+05    3.08193e+02   -7.53160e+02
+
+Writing checkpoint, step 9700 at Thu Oct  3 01:31:31 2024
+
+
+
+DD  step 9999 load imb.: force 29.4%  pme mesh/force 2.384
+           Step           Time
+          10000       10.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.71149e+04   -1.77502e+05    1.41628e+02   -1.60246e+05    2.97014e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.30544e+05   -1.57553e+05    3.06382e+02   -8.15909e+02
+
+Writing checkpoint, step 10900 at Thu Oct  3 01:46:19 2024
+
+
+
+DD  step 10999 load imb.: force 22.0%  pme mesh/force 2.715
+           Step           Time
+          11000       11.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.74055e+04   -1.77092e+05    1.70757e+02   -1.59516e+05    2.97088e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.29807e+05   -1.57552e+05    3.06458e+02   -6.47050e+02
+
+
+DD  step 11999 load imb.: force 21.1%  pme mesh/force 2.636
+           Step           Time
+          12000       12.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.66465e+04   -1.76766e+05    1.66018e+02   -1.59953e+05    2.99101e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.30043e+05   -1.57555e+05    3.08534e+02   -1.06533e+03
+
+Writing checkpoint, step 12100 at Thu Oct  3 02:01:08 2024
+
+
+
+DD  step 12999 load imb.: force 20.3%  pme mesh/force 2.702
+           Step           Time
+          13000       13.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.65793e+04   -1.76196e+05    1.75025e+02   -1.59442e+05    2.93080e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.30134e+05   -1.57555e+05    3.02323e+02   -1.05992e+03
+
+Writing checkpoint, step 13300 at Thu Oct  3 02:15:55 2024
+
+
+
+DD  step 13999 load imb.: force 22.2%  pme mesh/force 2.381
+           Step           Time
+          14000       14.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.65791e+04   -1.76592e+05    1.59940e+02   -1.59853e+05    2.98064e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.30046e+05   -1.57558e+05    3.07465e+02   -1.06744e+03
+
+Writing checkpoint, step 14600 at Thu Oct  3 02:31:57 2024
+
+
+
+DD  step 14999 load imb.: force 50.8%  pme mesh/force 2.405
+           Step           Time
+          15000       15.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.66805e+04   -1.76566e+05    1.72879e+02   -1.59713e+05    3.01116e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.29601e+05   -1.57560e+05    3.10613e+02   -1.04710e+03
+
+Writing checkpoint, step 15800 at Thu Oct  3 02:46:46 2024
+
+
+
+DD  step 15999 load imb.: force 36.4%  pme mesh/force 2.549
+           Step           Time
+          16000       16.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.68347e+04   -1.76810e+05    1.54186e+02   -1.59821e+05    2.99474e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.29873e+05   -1.57563e+05    3.08920e+02   -9.57226e+02
+
+
+DD  step 16999 load imb.: force 29.5%  pme mesh/force 2.544
+           Step           Time
+          17000       17.00000
+
+Writing checkpoint, step 17000 at Thu Oct  3 03:01:33 2024
+
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.67432e+04   -1.76657e+05    1.49143e+02   -1.59764e+05    2.99208e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.29843e+05   -1.57563e+05    3.08645e+02   -9.85491e+02
+
+
+DD  step 17999 load imb.: force 17.7%  pme mesh/force 2.673
+           Step           Time
+          18000       18.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.67781e+04   -1.76956e+05    1.47026e+02   -1.60031e+05    3.01508e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.29880e+05   -1.57566e+05    3.11017e+02   -1.02872e+03
+
+Writing checkpoint, step 18200 at Thu Oct  3 03:16:21 2024
+
+
+
+DD  step 18999 load imb.: force 33.7%  pme mesh/force 2.302
+           Step           Time
+          19000       19.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.62484e+04   -1.75992e+05    1.65120e+02   -1.59579e+05    2.97732e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.29805e+05   -1.57567e+05    3.07122e+02   -1.18956e+03
+
+Writing checkpoint, step 19400 at Thu Oct  3 03:31:09 2024
+
+
+
+DD  step 19999 load imb.: force 32.0%  pme mesh/force 2.236
+           Step           Time
+          20000       20.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.67577e+04   -1.76786e+05    1.62249e+02   -1.59866e+05    2.99573e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.29909e+05   -1.57568e+05    3.09022e+02   -9.61028e+02
+
+Writing checkpoint, step 20600 at Thu Oct  3 03:45:59 2024
+
+
+
+DD  step 20999 load imb.: force 23.7%  pme mesh/force 2.294
+           Step           Time
+          21000       21.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.72806e+04   -1.77226e+05    1.86883e+02   -1.59759e+05    2.99860e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.29773e+05   -1.57572e+05    3.09318e+02   -7.05098e+02
+
+Writing checkpoint, step 21800 at Thu Oct  3 04:00:47 2024
+
+
+
+DD  step 21999 load imb.: force 42.7%  pme mesh/force 2.400
+           Step           Time
+          22000       22.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.70317e+04   -1.76778e+05    1.38532e+02   -1.59607e+05    3.00152e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.29592e+05   -1.57573e+05    3.09618e+02   -8.03956e+02
+
+
+DD  step 22999 load imb.: force 24.0%  pme mesh/force 2.510
+           Step           Time
+          23000       23.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.62278e+04   -1.75645e+05    1.51753e+02   -1.59265e+05    2.97959e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.29469e+05   -1.57576e+05    3.07357e+02   -1.15611e+03
+
+Writing checkpoint, step 23100 at Thu Oct  3 04:16:49 2024
+
+
+
+DD  step 23999 load imb.: force 31.1%  pme mesh/force 2.588
+           Step           Time
+          24000       24.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.63587e+04   -1.76401e+05    1.61166e+02   -1.59881e+05    3.01277e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.29753e+05   -1.57577e+05    3.10779e+02   -1.18759e+03
+
+Writing checkpoint, step 24300 at Thu Oct  3 04:31:36 2024
+
+
+
+DD  step 24999 load imb.: force 20.2%  pme mesh/force 2.447
+           Step           Time
+          25000       25.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.69672e+04   -1.76825e+05    1.44689e+02   -1.59714e+05    3.03286e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.29385e+05   -1.57578e+05    3.12851e+02   -7.94561e+02
+
+Writing checkpoint, step 25500 at Thu Oct  3 04:46:24 2024
+
+
+
+DD  step 25999 load imb.: force 43.3%  pme mesh/force 2.185
+           Step           Time
+          26000       26.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.64677e+04   -1.76443e+05    1.60553e+02   -1.59815e+05    3.00395e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.29775e+05   -1.57581e+05    3.09869e+02   -1.10959e+03
+
+Writing checkpoint, step 26700 at Thu Oct  3 05:01:12 2024
+
+
+
+DD  step 26999 load imb.: force 25.4%  pme mesh/force 2.639
+           Step           Time
+          27000       27.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.67721e+04   -1.76418e+05    1.79038e+02   -1.59467e+05    2.99290e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.29538e+05   -1.57581e+05    3.08730e+02   -9.42525e+02
+
+Writing checkpoint, step 27900 at Thu Oct  3 05:16:00 2024
+
+
+
+DD  step 27999 load imb.: force 26.3%  pme mesh/force 2.377
+           Step           Time
+          28000       28.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.65775e+04   -1.76266e+05    1.50971e+02   -1.59538e+05    3.00245e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.29513e+05   -1.57583e+05    3.09714e+02   -1.05545e+03
+
+
+DD  step 28999 load imb.: force 26.5%  pme mesh/force 2.603
+           Step           Time
+          29000       29.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.65467e+04   -1.76543e+05    1.53007e+02   -1.59844e+05    2.99433e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.29901e+05   -1.57584e+05    3.08877e+02   -1.07162e+03
+
+Writing checkpoint, step 29100 at Thu Oct  3 05:30:47 2024
+
+
+
+DD  step 29999 load imb.: force 36.6%  pme mesh/force 2.236
+           Step           Time
+          30000       30.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.66667e+04   -1.77286e+05    1.47660e+02   -1.60472e+05    3.00473e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.30425e+05   -1.57587e+05    3.09950e+02   -1.15716e+03
+
+Writing checkpoint, step 30400 at Thu Oct  3 05:46:52 2024
+
+
+
+DD  step 30999 load imb.: force 39.8%  pme mesh/force 2.308
+           Step           Time
+          31000       31.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.73688e+04   -1.77390e+05    1.44831e+02   -1.59877e+05    3.02110e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.29666e+05   -1.57587e+05    3.11638e+02   -6.94640e+02
+
+Writing checkpoint, step 31600 at Thu Oct  3 06:01:40 2024
+
+
+
+DD  step 31999 load imb.: force 21.7%  pme mesh/force 2.489
+           Step           Time
+          32000       32.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.68551e+04   -1.77047e+05    1.45312e+02   -1.60047e+05    2.95446e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.30502e+05   -1.57589e+05    3.04764e+02   -9.45056e+02
+
+Writing checkpoint, step 32800 at Thu Oct  3 06:16:29 2024
+
+
+
+DD  step 32999 load imb.: force 31.9%  pme mesh/force 2.180
+           Step           Time
+          33000       33.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.66552e+04   -1.76286e+05    1.57209e+02   -1.59474e+05    3.02883e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.29186e+05   -1.57591e+05    3.12436e+02   -1.04823e+03
+
+
+DD  step 33999 load imb.: force 29.3%  pme mesh/force 2.629
+           Step           Time
+          34000       34.00000
+
+Writing checkpoint, step 34000 at Thu Oct  3 06:31:17 2024
+
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.64011e+04   -1.75487e+05    1.48426e+02   -1.58938e+05    3.02142e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.28724e+05   -1.57595e+05    3.11671e+02   -1.00328e+03
+
+
+DD  step 34999 load imb.: force 25.1%  pme mesh/force 2.232
+           Step           Time
+          35000       35.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.70619e+04   -1.76456e+05    1.76503e+02   -1.59218e+05    3.00817e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.29136e+05   -1.57595e+05    3.10305e+02   -7.16652e+02
+
+Writing checkpoint, step 35200 at Thu Oct  3 06:46:06 2024
+
+
+
+DD  step 35999 load imb.: force 30.1%  pme mesh/force 2.552
+           Step           Time
+          36000       36.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.65233e+04   -1.75671e+05    1.61662e+02   -1.58986e+05    2.98039e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.29182e+05   -1.57597e+05    3.07439e+02   -9.36997e+02
+
+Writing checkpoint, step 36400 at Thu Oct  3 07:00:55 2024
+
+
+
+DD  step 36999 load imb.: force 24.3%  pme mesh/force 2.525
+           Step           Time
+          37000       37.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.69474e+04   -1.76378e+05    1.62900e+02   -1.59268e+05    3.01729e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.29095e+05   -1.57598e+05    3.11245e+02   -7.98632e+02
+
+Writing checkpoint, step 37700 at Thu Oct  3 07:16:56 2024
+
+
+
+DD  step 37999 load imb.: force 65.1%  pme mesh/force 2.155
+           Step           Time
+          38000       38.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.67240e+04   -1.76566e+05    1.66287e+02   -1.59676e+05    3.02645e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.29411e+05   -1.57601e+05    3.12190e+02   -9.42594e+02
+
+Writing checkpoint, step 38900 at Thu Oct  3 07:31:44 2024
+
+
+
+DD  step 38999 load imb.: force 33.2%  pme mesh/force 2.390
+           Step           Time
+          39000       39.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.73362e+04   -1.77060e+05    1.45406e+02   -1.59579e+05    3.03708e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.29208e+05   -1.57602e+05    3.13287e+02   -6.53761e+02
+
+
+DD  step 39999 load imb.: force 32.3%  pme mesh/force 2.150
+           Step           Time
+          40000       40.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.67774e+04   -1.76434e+05    1.69336e+02   -1.59487e+05    3.01336e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.29354e+05   -1.57604e+05    3.10840e+02   -9.12576e+02
+
+Writing checkpoint, step 40100 at Thu Oct  3 07:46:32 2024
+
+
+
+DD  step 40999 load imb.: force 33.7%  pme mesh/force 2.379
+           Step           Time
+          41000       41.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.76668e+04   -1.77256e+05    1.67013e+02   -1.59422e+05    3.03162e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.29106e+05   -1.57604e+05    3.12724e+02   -4.50905e+02
+
+Writing checkpoint, step 41300 at Thu Oct  3 08:01:20 2024
+
+
+
+DD  step 41999 load imb.: force 33.3%  pme mesh/force 2.477
+           Step           Time
+          42000       42.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.66537e+04   -1.76338e+05    1.65916e+02   -1.59519e+05    3.04129e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.29106e+05   -1.57608e+05    3.13721e+02   -8.97830e+02
+
+Writing checkpoint, step 42500 at Thu Oct  3 08:16:08 2024
+
+
+
+DD  step 42999 load imb.: force 29.8%  pme mesh/force 2.419
+           Step           Time
+          43000       43.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.62357e+04   -1.75905e+05    1.48844e+02   -1.59521e+05    3.03975e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.29123e+05   -1.57610e+05    3.13562e+02   -1.14275e+03
+
+Writing checkpoint, step 43700 at Thu Oct  3 08:30:56 2024
+
+
+
+DD  step 43999 load imb.: force 23.4%  pme mesh/force 2.410
+           Step           Time
+          44000       44.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.64743e+04   -1.76270e+05    1.55516e+02   -1.59640e+05    2.99699e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.29670e+05   -1.57612e+05    3.09151e+02   -1.06843e+03
+
+
+DD  step 44999 load imb.: force 28.8%  pme mesh/force 2.405
+           Step           Time
+          45000       45.00000
+
+Writing checkpoint, step 45000 at Thu Oct  3 08:46:57 2024
+
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.63107e+04   -1.76028e+05    1.56734e+02   -1.59561e+05    3.00163e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.29544e+05   -1.57613e+05    3.09630e+02   -1.14676e+03
+
+
+DD  step 45999 load imb.: force 37.0%  pme mesh/force 2.405
+           Step           Time
+          46000       46.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.65823e+04   -1.75850e+05    1.55856e+02   -1.59112e+05    2.96524e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.29460e+05   -1.57616e+05    3.05876e+02   -1.00776e+03
+
+Writing checkpoint, step 46200 at Thu Oct  3 09:01:46 2024
+
+
+
+DD  step 46999 load imb.: force 28.2%  pme mesh/force 2.291
+           Step           Time
+          47000       47.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.68200e+04   -1.76721e+05    1.72330e+02   -1.59729e+05    3.00696e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.29659e+05   -1.57618e+05    3.10180e+02   -9.50778e+02
+
+Writing checkpoint, step 47400 at Thu Oct  3 09:16:34 2024
+
+
+
+DD  step 47999 load imb.: force 39.7%  pme mesh/force 2.292
+           Step           Time
+          48000       48.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.66887e+04   -1.76791e+05    1.62511e+02   -1.59940e+05    3.01319e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.29808e+05   -1.57619e+05    3.10822e+02   -9.86673e+02
+
+Writing checkpoint, step 48600 at Thu Oct  3 09:31:22 2024
+
+
+
+DD  step 48999 load imb.: force 27.7%  pme mesh/force 2.339
+           Step           Time
+          49000       49.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.70551e+04   -1.77661e+05    1.48652e+02   -1.60457e+05    3.02761e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.30181e+05   -1.57620e+05    3.12310e+02   -8.95656e+02
+
+Writing checkpoint, step 49800 at Thu Oct  3 09:46:11 2024
+
+
+
+DD  step 49999 load imb.: force 32.2%  pme mesh/force 2.126
+           Step           Time
+          50000       50.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.68944e+04   -1.77216e+05    1.88011e+02   -1.60133e+05    2.98825e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.30251e+05   -1.57622e+05    3.08250e+02   -9.90096e+02
+
+
+DD  step 50999 load imb.: force 36.0%  pme mesh/force 2.015
+           Step           Time
+          51000       51.00000
+
+Writing checkpoint, step 51000 at Thu Oct  3 10:01:00 2024
+
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.61281e+04   -1.76012e+05    1.46238e+02   -1.59738e+05    2.99540e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.29784e+05   -1.57622e+05    3.08987e+02   -1.24079e+03
+
+
+DD  step 51999 load imb.: force 28.0%  pme mesh/force 2.331
+           Step           Time
+          52000       52.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.66765e+04   -1.76621e+05    1.57965e+02   -1.59787e+05    3.05571e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.29230e+05   -1.57627e+05    3.15209e+02   -1.01538e+03
+
+Writing checkpoint, step 52300 at Thu Oct  3 10:17:01 2024
+
+
+
+DD  step 52999 load imb.: force 37.8%  pme mesh/force 2.385
+           Step           Time
+          53000       53.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.62025e+04   -1.75910e+05    1.75118e+02   -1.59532e+05    3.02925e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.29240e+05   -1.57627e+05    3.12479e+02   -1.17657e+03
+
+Writing checkpoint, step 53500 at Thu Oct  3 10:31:49 2024
+
+
+
+DD  step 53999 load imb.: force 15.3%  pme mesh/force 2.569
+           Step           Time
+          54000       54.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.68952e+04   -1.76138e+05    1.50777e+02   -1.59092e+05    3.02530e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.28839e+05   -1.57628e+05    3.12071e+02   -7.76800e+02
+
+Writing checkpoint, step 54700 at Thu Oct  3 10:46:39 2024
+
+
+
+DD  step 54999 load imb.: force 26.7%  pme mesh/force 2.300
+           Step           Time
+          55000       55.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.63038e+04   -1.75634e+05    1.61863e+02   -1.59168e+05    3.03733e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.28795e+05   -1.57633e+05    3.13313e+02   -1.11516e+03
+
+Writing checkpoint, step 55900 at Thu Oct  3 11:01:27 2024
+
+
+
+DD  step 55999 load imb.: force 25.1%  pme mesh/force 2.388
+           Step           Time
+          56000       56.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.59882e+04   -1.75871e+05    1.78722e+02   -1.59704e+05    3.03748e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.29329e+05   -1.57634e+05    3.13329e+02   -1.30615e+03
+
+
+DD  step 56999 load imb.: force 25.3%  pme mesh/force 2.449
+           Step           Time
+          57000       57.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.71854e+04   -1.77225e+05    1.58598e+02   -1.59881e+05    3.04106e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.29470e+05   -1.57633e+05    3.13697e+02   -7.09297e+02
+
+Writing checkpoint, step 57100 at Thu Oct  3 11:16:15 2024
+
+
+
+DD  step 57999 load imb.: force 27.9%  pme mesh/force 2.570
+           Step           Time
+          58000       58.00000
+
+   Energies (kJ/mol)
+        LJ (SR)   Coulomb (SR)   Coul. recip.      Potential    Kinetic En.
+    1.67096e+04   -1.76500e+05    1.52919e+02   -1.59638e+05    3.01679e+04
+   Total Energy  Conserved En.    Temperature Pressure (bar)
+   -1.29470e+05   -1.57637e+05    3.11194e+02   -9.15915e+02
+
