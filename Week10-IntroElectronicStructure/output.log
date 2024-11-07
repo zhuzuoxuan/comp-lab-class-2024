@@ -1,0 +1,924 @@
+2024-11-07:15:12:24,51 INFO     [psi4.driver.task_planner:235] PLANNING MB:  mc_level_idx=0 packet={'driver': 'energy', 'method': 'ccsd(t)', 'basis': 'aug-cc-pvdz', 'keywords': {'FREEZE_CORE': '1', 'function_kwargs': {}}}
+2024-11-07:15:12:24,51 INFO     [psi4.driver.driver_nbody:952] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  // ManyBody Setup: N-Body Levels [1, 2]//
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:12:24,51 INFO     [psi4.driver.driver_nbody:513]         Number of 1-body computations:     2
+        Number of 2-body computations:     1
+2024-11-07:15:12:24,53 INFO     [psi4.driver.driver_nbody:1014] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //       ManyBody Computations       //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:12:24,74 INFO     [psi4.driver.task_base:159] <<< JSON launch ... c2v 0.0
+2024-11-07:15:12:26,281 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:12:26,284 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=0.0
+2024-11-07:15:12:30,47 INFO     [psi4.driver.driver:502] Return energy(): -526.969801026202
+2024-11-07:15:12:30,67 INFO     [psi4.driver.task_base:159] <<< JSON launch ... c2v 0.0
+2024-11-07:15:12:30,97 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:12:30,100 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=0.0
+2024-11-07:15:12:33,776 INFO     [psi4.driver.driver:502] Return energy(): -526.9698010262025
+2024-11-07:15:12:33,793 INFO     [psi4.driver.task_base:159] <<< JSON launch ... d2h 48.986690359165706
+2024-11-07:15:12:33,822 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:12:33,825 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=48.986690359165706
+2024-11-07:15:12:36,861 INFO     [psi4.driver.driver:502] Return energy(): -1053.9393329701613
+2024-11-07:15:12:36,878 INFO     [psi4.driver.driver_nbody:1364] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //          ManyBody Results         //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:12:36,879 INFO     [psi4.driver.driver_nbody:394] 
+   ==> N-Body: Counterpoise Corrected (CP) energies <==
+
+        n-Body     Total Energy            Interaction Energy                          N-body Contribution to Interaction Energy
+                   [Eh]                    [Eh]                  [kcal/mol]            [Eh]                  [kcal/mol]
+             1  N/A                         0.000000000000        0.000000000000        0.000000000000        0.000000000000
+  FULL/RTN   2  N/A                         0.000269082243        0.168851656847        0.000269082243        0.168851656847
+
+
+2024-11-07:15:12:36,942 INFO     [psi4.driver.task_planner:235] PLANNING MB:  mc_level_idx=0 packet={'driver': 'energy', 'method': 'ccsd(t)', 'basis': 'aug-cc-pvdz', 'keywords': {'FREEZE_CORE': '1', 'function_kwargs': {}}}
+2024-11-07:15:12:36,943 INFO     [psi4.driver.driver_nbody:952] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  // ManyBody Setup: N-Body Levels [1, 2]//
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:12:36,943 INFO     [psi4.driver.driver_nbody:513]         Number of 1-body computations:     2
+        Number of 2-body computations:     1
+2024-11-07:15:12:36,944 INFO     [psi4.driver.driver_nbody:1014] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //       ManyBody Computations       //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:12:36,966 INFO     [psi4.driver.task_base:159] <<< JSON launch ... c2v 0.0
+2024-11-07:15:12:36,996 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:12:37,3 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=0.0
+2024-11-07:15:12:40,724 INFO     [psi4.driver.driver:502] Return energy(): -526.9697632262446
+2024-11-07:15:12:40,740 INFO     [psi4.driver.task_base:159] <<< JSON launch ... c2v 0.0
+2024-11-07:15:12:40,770 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:12:40,773 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=0.0
+2024-11-07:15:12:44,448 INFO     [psi4.driver.driver:502] Return energy(): -526.9697632262447
+2024-11-07:15:12:44,466 INFO     [psi4.driver.task_base:159] <<< JSON launch ... d2h 42.863354064269984
+2024-11-07:15:12:44,496 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:12:44,499 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=42.863354064269984
+2024-11-07:15:12:47,585 INFO     [psi4.driver.driver:502] Return energy(): -1053.9397226605124
+2024-11-07:15:12:47,601 INFO     [psi4.driver.driver_nbody:1364] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //          ManyBody Results         //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:12:47,602 INFO     [psi4.driver.driver_nbody:394] 
+   ==> N-Body: Counterpoise Corrected (CP) energies <==
+
+        n-Body     Total Energy            Interaction Energy                          N-body Contribution to Interaction Energy
+                   [Eh]                    [Eh]                  [kcal/mol]            [Eh]                  [kcal/mol]
+             1  N/A                         0.000000000000        0.000000000000        0.000000000000        0.000000000000
+  FULL/RTN   2  N/A                        -0.000196208023       -0.123122393406       -0.000196208023       -0.123122393406
+
+
+2024-11-07:15:12:47,664 INFO     [psi4.driver.task_planner:235] PLANNING MB:  mc_level_idx=0 packet={'driver': 'energy', 'method': 'ccsd(t)', 'basis': 'aug-cc-pvdz', 'keywords': {'FREEZE_CORE': '1', 'function_kwargs': {}}}
+2024-11-07:15:12:47,664 INFO     [psi4.driver.driver_nbody:952] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  // ManyBody Setup: N-Body Levels [1, 2]//
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:12:47,665 INFO     [psi4.driver.driver_nbody:513]         Number of 1-body computations:     2
+        Number of 2-body computations:     1
+2024-11-07:15:12:47,666 INFO     [psi4.driver.driver_nbody:1014] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //       ManyBody Computations       //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:12:47,688 INFO     [psi4.driver.task_base:159] <<< JSON launch ... c2v 0.0
+2024-11-07:15:12:47,718 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:12:47,721 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=0.0
+2024-11-07:15:12:50,789 INFO     [psi4.driver.driver:502] Return energy(): -526.9697211194688
+2024-11-07:15:12:50,804 INFO     [psi4.driver.task_base:159] <<< JSON launch ... c2v 0.0
+2024-11-07:15:12:50,833 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:12:50,836 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=0.0
+2024-11-07:15:12:53,928 INFO     [psi4.driver.driver:502] Return energy(): -526.9697211194688
+2024-11-07:15:12:53,945 INFO     [psi4.driver.task_base:159] <<< JSON launch ... d2h 34.290683251416
+2024-11-07:15:12:53,975 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:12:53,978 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=34.290683251416
+2024-11-07:15:12:56,439 INFO     [psi4.driver.driver:502] Return energy(): -1053.9395313641587
+2024-11-07:15:12:56,455 INFO     [psi4.driver.driver_nbody:1364] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //          ManyBody Results         //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:12:56,456 INFO     [psi4.driver.driver_nbody:394] 
+   ==> N-Body: Counterpoise Corrected (CP) energies <==
+
+        n-Body     Total Energy            Interaction Energy                          N-body Contribution to Interaction Energy
+                   [Eh]                    [Eh]                  [kcal/mol]            [Eh]                  [kcal/mol]
+             1  N/A                         0.000000000000        0.000000000000        0.000000000000        0.000000000000
+  FULL/RTN   2  N/A                        -0.000089125221       -0.055926920634       -0.000089125221       -0.055926920634
+
+
+2024-11-07:15:12:56,519 INFO     [psi4.driver.task_planner:235] PLANNING MB:  mc_level_idx=0 packet={'driver': 'energy', 'method': 'ccsd(t)', 'basis': 'aug-cc-pvdz', 'keywords': {'FREEZE_CORE': '1', 'function_kwargs': {}}}
+2024-11-07:15:12:56,519 INFO     [psi4.driver.driver_nbody:952] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  // ManyBody Setup: N-Body Levels [1, 2]//
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:12:56,519 INFO     [psi4.driver.driver_nbody:513]         Number of 1-body computations:     2
+        Number of 2-body computations:     1
+2024-11-07:15:12:56,521 INFO     [psi4.driver.driver_nbody:1014] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //       ManyBody Computations       //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:12:56,543 INFO     [psi4.driver.task_base:159] <<< JSON launch ... c2v 0.0
+2024-11-07:15:12:56,573 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:12:56,576 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=0.0
+2024-11-07:15:12:59,487 INFO     [psi4.driver.driver:502] Return energy(): -526.9696970014364
+2024-11-07:15:12:59,502 INFO     [psi4.driver.task_base:159] <<< JSON launch ... c2v 0.0
+2024-11-07:15:12:59,532 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:12:59,535 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=0.0
+2024-11-07:15:13:02,436 INFO     [psi4.driver.driver:502] Return energy(): -526.9696970014357
+2024-11-07:15:13:02,454 INFO     [psi4.driver.task_base:159] <<< JSON launch ... d2h 28.575569376180024
+2024-11-07:15:13:02,485 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:13:02,488 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=28.575569376180024
+2024-11-07:15:13:04,856 INFO     [psi4.driver.driver:502] Return energy(): -1053.9394240309662
+2024-11-07:15:13:04,872 INFO     [psi4.driver.driver_nbody:1364] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //          ManyBody Results         //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:13:04,873 INFO     [psi4.driver.driver_nbody:394] 
+   ==> N-Body: Counterpoise Corrected (CP) energies <==
+
+        n-Body     Total Energy            Interaction Energy                          N-body Contribution to Interaction Energy
+                   [Eh]                    [Eh]                  [kcal/mol]            [Eh]                  [kcal/mol]
+             1  N/A                         0.000000000000        0.000000000000        0.000000000000        0.000000000000
+  FULL/RTN   2  N/A                        -0.000030028094       -0.018842913457       -0.000030028094       -0.018842913457
+
+
+2024-11-07:15:17:03,514 INFO     [psi4.driver.task_planner:235] PLANNING MB:  mc_level_idx=0 packet={'driver': 'energy', 'method': 'ccsd(t)', 'basis': 'aug-cc-pvdz', 'keywords': {'FREEZE_CORE': '1', 'function_kwargs': {}}}
+2024-11-07:15:17:03,514 INFO     [psi4.driver.driver_nbody:952] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  // ManyBody Setup: N-Body Levels [1, 2]//
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:17:03,514 INFO     [psi4.driver.driver_nbody:513]         Number of 1-body computations:     2
+        Number of 2-body computations:     1
+2024-11-07:15:17:03,515 INFO     [psi4.driver.driver_nbody:1014] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //       ManyBody Computations       //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:17:03,537 INFO     [psi4.driver.task_base:159] <<< JSON launch ... c2v 0.0
+2024-11-07:15:17:03,568 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:17:03,571 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=0.0
+2024-11-07:15:17:07,158 INFO     [psi4.driver.driver:502] Return energy(): -526.9698010262024
+2024-11-07:15:17:07,173 INFO     [psi4.driver.task_base:159] <<< JSON launch ... c2v 0.0
+2024-11-07:15:17:07,203 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:17:07,206 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=0.0
+2024-11-07:15:17:10,844 INFO     [psi4.driver.driver:502] Return energy(): -526.9698010262023
+2024-11-07:15:17:10,860 INFO     [psi4.driver.task_base:159] <<< JSON launch ... d2h 48.986690359165706
+2024-11-07:15:17:10,890 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:17:10,893 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=48.986690359165706
+2024-11-07:15:17:13,929 INFO     [psi4.driver.driver:502] Return energy(): -1053.9393329701618
+2024-11-07:15:17:13,948 INFO     [psi4.driver.driver_nbody:1364] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //          ManyBody Results         //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:17:13,948 INFO     [psi4.driver.driver_nbody:394] 
+   ==> N-Body: Counterpoise Corrected (CP) energies <==
+
+        n-Body     Total Energy            Interaction Energy                          N-body Contribution to Interaction Energy
+                   [Eh]                    [Eh]                  [kcal/mol]            [Eh]                  [kcal/mol]
+             1  N/A                         0.000000000000        0.000000000000        0.000000000000        0.000000000000
+  FULL/RTN   2  N/A                         0.000269082243        0.168851656561        0.000269082243        0.168851656561
+
+
+2024-11-07:15:17:14,12 INFO     [psi4.driver.task_planner:235] PLANNING MB:  mc_level_idx=0 packet={'driver': 'energy', 'method': 'ccsd(t)', 'basis': 'aug-cc-pvdz', 'keywords': {'FREEZE_CORE': '1', 'function_kwargs': {}}}
+2024-11-07:15:17:14,13 INFO     [psi4.driver.driver_nbody:952] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  // ManyBody Setup: N-Body Levels [1, 2]//
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:17:14,13 INFO     [psi4.driver.driver_nbody:513]         Number of 1-body computations:     2
+        Number of 2-body computations:     1
+2024-11-07:15:17:14,14 INFO     [psi4.driver.driver_nbody:1014] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //       ManyBody Computations       //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:17:14,36 INFO     [psi4.driver.task_base:159] <<< JSON launch ... c2v 0.0
+2024-11-07:15:17:14,66 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:17:14,70 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=0.0
+2024-11-07:15:17:17,744 INFO     [psi4.driver.driver:502] Return energy(): -526.9697632262444
+2024-11-07:15:17:17,760 INFO     [psi4.driver.task_base:159] <<< JSON launch ... c2v 0.0
+2024-11-07:15:17:17,789 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:17:17,792 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=0.0
+2024-11-07:15:17:21,476 INFO     [psi4.driver.driver:502] Return energy(): -526.9697632262443
+2024-11-07:15:17:21,491 INFO     [psi4.driver.task_base:159] <<< JSON launch ... d2h 42.863354064269984
+2024-11-07:15:17:21,521 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:17:21,524 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=42.863354064269984
+2024-11-07:15:17:24,474 INFO     [psi4.driver.driver:502] Return energy(): -1053.939722660513
+2024-11-07:15:17:24,491 INFO     [psi4.driver.driver_nbody:1364] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //          ManyBody Results         //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:17:24,492 INFO     [psi4.driver.driver_nbody:394] 
+   ==> N-Body: Counterpoise Corrected (CP) energies <==
+
+        n-Body     Total Energy            Interaction Energy                          N-body Contribution to Interaction Energy
+                   [Eh]                    [Eh]                  [kcal/mol]            [Eh]                  [kcal/mol]
+             1  N/A                         0.000000000000        0.000000000000        0.000000000000        0.000000000000
+  FULL/RTN   2  N/A                        -0.000196208024       -0.123122394119       -0.000196208024       -0.123122394119
+
+
+2024-11-07:15:17:24,556 INFO     [psi4.driver.task_planner:235] PLANNING MB:  mc_level_idx=0 packet={'driver': 'energy', 'method': 'ccsd(t)', 'basis': 'aug-cc-pvdz', 'keywords': {'FREEZE_CORE': '1', 'function_kwargs': {}}}
+2024-11-07:15:17:24,556 INFO     [psi4.driver.driver_nbody:952] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  // ManyBody Setup: N-Body Levels [1, 2]//
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:17:24,556 INFO     [psi4.driver.driver_nbody:513]         Number of 1-body computations:     2
+        Number of 2-body computations:     1
+2024-11-07:15:17:24,557 INFO     [psi4.driver.driver_nbody:1014] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //       ManyBody Computations       //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:17:24,579 INFO     [psi4.driver.task_base:159] <<< JSON launch ... c2v 0.0
+2024-11-07:15:17:24,611 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:17:24,614 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=0.0
+2024-11-07:15:17:27,700 INFO     [psi4.driver.driver:502] Return energy(): -526.9697211194687
+2024-11-07:15:17:27,716 INFO     [psi4.driver.task_base:159] <<< JSON launch ... c2v 0.0
+2024-11-07:15:17:27,746 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:17:27,749 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=0.0
+2024-11-07:15:17:30,807 INFO     [psi4.driver.driver:502] Return energy(): -526.9697211194682
+2024-11-07:15:17:30,823 INFO     [psi4.driver.task_base:159] <<< JSON launch ... d2h 34.290683251416
+2024-11-07:15:17:30,853 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:17:30,856 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=34.290683251416
+2024-11-07:15:17:33,279 INFO     [psi4.driver.driver:502] Return energy(): -1053.9395313641585
+2024-11-07:15:17:33,295 INFO     [psi4.driver.driver_nbody:1364] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //          ManyBody Results         //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:17:33,296 INFO     [psi4.driver.driver_nbody:394] 
+   ==> N-Body: Counterpoise Corrected (CP) energies <==
+
+        n-Body     Total Energy            Interaction Energy                          N-body Contribution to Interaction Energy
+                   [Eh]                    [Eh]                  [kcal/mol]            [Eh]                  [kcal/mol]
+             1  N/A                         0.000000000000        0.000000000000        0.000000000000        0.000000000000
+  FULL/RTN   2  N/A                        -0.000089125222       -0.055926920919       -0.000089125222       -0.055926920919
+
+
+2024-11-07:15:17:33,359 INFO     [psi4.driver.task_planner:235] PLANNING MB:  mc_level_idx=0 packet={'driver': 'energy', 'method': 'ccsd(t)', 'basis': 'aug-cc-pvdz', 'keywords': {'FREEZE_CORE': '1', 'function_kwargs': {}}}
+2024-11-07:15:17:33,359 INFO     [psi4.driver.driver_nbody:952] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  // ManyBody Setup: N-Body Levels [1, 2]//
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:17:33,359 INFO     [psi4.driver.driver_nbody:513]         Number of 1-body computations:     2
+        Number of 2-body computations:     1
+2024-11-07:15:17:33,361 INFO     [psi4.driver.driver_nbody:1014] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //       ManyBody Computations       //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:17:33,382 INFO     [psi4.driver.task_base:159] <<< JSON launch ... c2v 0.0
+2024-11-07:15:17:33,413 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:17:33,416 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=0.0
+2024-11-07:15:17:36,285 INFO     [psi4.driver.driver:502] Return energy(): -526.9696970014364
+2024-11-07:15:17:36,301 INFO     [psi4.driver.task_base:159] <<< JSON launch ... c2v 0.0
+2024-11-07:15:17:36,331 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:17:36,334 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=0.0
+2024-11-07:15:17:39,240 INFO     [psi4.driver.driver:502] Return energy(): -526.9696970014357
+2024-11-07:15:17:39,256 INFO     [psi4.driver.task_base:159] <<< JSON launch ... d2h 28.575569376180024
+2024-11-07:15:17:39,286 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:17:39,289 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=28.575569376180024
+2024-11-07:15:17:41,577 INFO     [psi4.driver.driver:502] Return energy(): -1053.9394240309668
+2024-11-07:15:17:41,593 INFO     [psi4.driver.driver_nbody:1364] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //          ManyBody Results         //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:17:41,593 INFO     [psi4.driver.driver_nbody:394] 
+   ==> N-Body: Counterpoise Corrected (CP) energies <==
+
+        n-Body     Total Energy            Interaction Energy                          N-body Contribution to Interaction Energy
+                   [Eh]                    [Eh]                  [kcal/mol]            [Eh]                  [kcal/mol]
+             1  N/A                         0.000000000000        0.000000000000        0.000000000000        0.000000000000
+  FULL/RTN   2  N/A                        -0.000030028095       -0.018842913885       -0.000030028095       -0.018842913885
+
+
+2024-11-07:15:18:57,758 INFO     [psi4.driver.task_planner:235] PLANNING MB:  mc_level_idx=0 packet={'driver': 'energy', 'method': 'ccsd(t)', 'basis': 'aug-cc-pvdz', 'keywords': {'FREEZE_CORE': '1', 'function_kwargs': {}}}
+2024-11-07:15:18:57,758 INFO     [psi4.driver.driver_nbody:952] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  // ManyBody Setup: N-Body Levels [1, 2]//
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:18:57,758 INFO     [psi4.driver.driver_nbody:513]         Number of 1-body computations:     2
+        Number of 2-body computations:     1
+2024-11-07:15:18:57,760 INFO     [psi4.driver.driver_nbody:1014] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //       ManyBody Computations       //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:18:57,782 INFO     [psi4.driver.task_base:159] <<< JSON launch ... c2v 0.0
+2024-11-07:15:18:57,813 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:18:57,816 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=0.0
+2024-11-07:15:19:01,389 INFO     [psi4.driver.driver:502] Return energy(): -526.9698010262024
+2024-11-07:15:19:01,406 INFO     [psi4.driver.task_base:159] <<< JSON launch ... c2v 0.0
+2024-11-07:15:19:01,436 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:19:01,439 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=0.0
+2024-11-07:15:19:04,993 INFO     [psi4.driver.driver:502] Return energy(): -526.9698010262024
+2024-11-07:15:19:05,8 INFO     [psi4.driver.task_base:159] <<< JSON launch ... d2h 48.986690359165706
+2024-11-07:15:19:05,38 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:19:05,41 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=48.986690359165706
+2024-11-07:15:19:08,32 INFO     [psi4.driver.driver:502] Return energy(): -1053.9393329701618
+2024-11-07:15:19:08,48 INFO     [psi4.driver.driver_nbody:1364] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //          ManyBody Results         //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:19:08,49 INFO     [psi4.driver.driver_nbody:394] 
+   ==> N-Body: Counterpoise Corrected (CP) energies <==
+
+        n-Body     Total Energy            Interaction Energy                          N-body Contribution to Interaction Energy
+                   [Eh]                    [Eh]                  [kcal/mol]            [Eh]                  [kcal/mol]
+             1  N/A                         0.000000000000        0.000000000000        0.000000000000        0.000000000000
+  FULL/RTN   2  N/A                         0.000269082243        0.168851656704        0.000269082243        0.168851656704
+
+
+2024-11-07:15:19:08,112 INFO     [psi4.driver.task_planner:235] PLANNING MB:  mc_level_idx=0 packet={'driver': 'energy', 'method': 'ccsd(t)', 'basis': 'aug-cc-pvdz', 'keywords': {'FREEZE_CORE': '1', 'function_kwargs': {}}}
+2024-11-07:15:19:08,112 INFO     [psi4.driver.driver_nbody:952] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  // ManyBody Setup: N-Body Levels [1, 2]//
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:19:08,112 INFO     [psi4.driver.driver_nbody:513]         Number of 1-body computations:     2
+        Number of 2-body computations:     1
+2024-11-07:15:19:08,114 INFO     [psi4.driver.driver_nbody:1014] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //       ManyBody Computations       //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:19:08,136 INFO     [psi4.driver.task_base:159] <<< JSON launch ... c2v 0.0
+2024-11-07:15:19:08,166 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:19:08,169 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=0.0
+2024-11-07:15:19:11,727 INFO     [psi4.driver.driver:502] Return energy(): -526.9697632262446
+2024-11-07:15:19:11,743 INFO     [psi4.driver.task_base:159] <<< JSON launch ... c2v 0.0
+2024-11-07:15:19:11,772 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:19:11,776 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=0.0
+2024-11-07:15:19:15,437 INFO     [psi4.driver.driver:502] Return energy(): -526.9697632262443
+2024-11-07:15:19:15,453 INFO     [psi4.driver.task_base:159] <<< JSON launch ... d2h 42.863354064269984
+2024-11-07:15:19:15,482 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:19:15,485 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=42.863354064269984
+2024-11-07:15:19:18,448 INFO     [psi4.driver.driver:502] Return energy(): -1053.9397226605124
+2024-11-07:15:19:18,483 INFO     [psi4.driver.driver_nbody:1364] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //          ManyBody Results         //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:19:18,483 INFO     [psi4.driver.driver_nbody:394] 
+   ==> N-Body: Counterpoise Corrected (CP) energies <==
+
+        n-Body     Total Energy            Interaction Energy                          N-body Contribution to Interaction Energy
+                   [Eh]                    [Eh]                  [kcal/mol]            [Eh]                  [kcal/mol]
+             1  N/A                         0.000000000000        0.000000000000        0.000000000000        0.000000000000
+  FULL/RTN   2  N/A                        -0.000196208024       -0.123122393691       -0.000196208024       -0.123122393691
+
+
+2024-11-07:15:19:18,549 INFO     [psi4.driver.task_planner:235] PLANNING MB:  mc_level_idx=0 packet={'driver': 'energy', 'method': 'ccsd(t)', 'basis': 'aug-cc-pvdz', 'keywords': {'FREEZE_CORE': '1', 'function_kwargs': {}}}
+2024-11-07:15:19:18,549 INFO     [psi4.driver.driver_nbody:952] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  // ManyBody Setup: N-Body Levels [1, 2]//
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:19:18,549 INFO     [psi4.driver.driver_nbody:513]         Number of 1-body computations:     2
+        Number of 2-body computations:     1
+2024-11-07:15:19:18,550 INFO     [psi4.driver.driver_nbody:1014] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //       ManyBody Computations       //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:19:18,573 INFO     [psi4.driver.task_base:159] <<< JSON launch ... c2v 0.0
+2024-11-07:15:19:18,604 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:19:18,607 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=0.0
+2024-11-07:15:19:21,583 INFO     [psi4.driver.driver:502] Return energy(): -526.9697211194688
+2024-11-07:15:19:21,599 INFO     [psi4.driver.task_base:159] <<< JSON launch ... c2v 0.0
+2024-11-07:15:19:21,629 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:19:21,632 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=0.0
+2024-11-07:15:19:24,631 INFO     [psi4.driver.driver:502] Return energy(): -526.9697211194682
+2024-11-07:15:19:24,646 INFO     [psi4.driver.task_base:159] <<< JSON launch ... d2h 34.290683251416
+2024-11-07:15:19:24,676 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:19:24,680 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=34.290683251416
+2024-11-07:15:19:27,98 INFO     [psi4.driver.driver:502] Return energy(): -1053.9395313641587
+2024-11-07:15:19:27,115 INFO     [psi4.driver.driver_nbody:1364] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //          ManyBody Results         //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:19:27,115 INFO     [psi4.driver.driver_nbody:394] 
+   ==> N-Body: Counterpoise Corrected (CP) energies <==
+
+        n-Body     Total Energy            Interaction Energy                          N-body Contribution to Interaction Energy
+                   [Eh]                    [Eh]                  [kcal/mol]            [Eh]                  [kcal/mol]
+             1  N/A                         0.000000000000        0.000000000000        0.000000000000        0.000000000000
+  FULL/RTN   2  N/A                        -0.000089125222       -0.055926921062       -0.000089125222       -0.055926921062
+
+
+2024-11-07:15:19:27,180 INFO     [psi4.driver.task_planner:235] PLANNING MB:  mc_level_idx=0 packet={'driver': 'energy', 'method': 'ccsd(t)', 'basis': 'aug-cc-pvdz', 'keywords': {'FREEZE_CORE': '1', 'function_kwargs': {}}}
+2024-11-07:15:19:27,181 INFO     [psi4.driver.driver_nbody:952] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  // ManyBody Setup: N-Body Levels [1, 2]//
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:19:27,181 INFO     [psi4.driver.driver_nbody:513]         Number of 1-body computations:     2
+        Number of 2-body computations:     1
+2024-11-07:15:19:27,182 INFO     [psi4.driver.driver_nbody:1014] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //       ManyBody Computations       //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:19:27,205 INFO     [psi4.driver.task_base:159] <<< JSON launch ... c2v 0.0
+2024-11-07:15:19:27,237 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:19:27,240 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=0.0
+2024-11-07:15:19:30,136 INFO     [psi4.driver.driver:502] Return energy(): -526.969697001436
+2024-11-07:15:19:30,152 INFO     [psi4.driver.task_base:159] <<< JSON launch ... c2v 0.0
+2024-11-07:15:19:30,182 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:19:30,185 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=0.0
+2024-11-07:15:19:33,86 INFO     [psi4.driver.driver:502] Return energy(): -526.9696970014357
+2024-11-07:15:19:33,101 INFO     [psi4.driver.task_base:159] <<< JSON launch ... d2h 28.575569376180024
+2024-11-07:15:19:33,131 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:19:33,134 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=28.575569376180024
+2024-11-07:15:19:35,424 INFO     [psi4.driver.driver:502] Return energy(): -1053.9394240309668
+2024-11-07:15:19:35,455 INFO     [psi4.driver.driver_nbody:1364] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //          ManyBody Results         //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:19:35,455 INFO     [psi4.driver.driver_nbody:394] 
+   ==> N-Body: Counterpoise Corrected (CP) energies <==
+
+        n-Body     Total Energy            Interaction Energy                          N-body Contribution to Interaction Energy
+                   [Eh]                    [Eh]                  [kcal/mol]            [Eh]                  [kcal/mol]
+             1  N/A                         0.000000000000        0.000000000000        0.000000000000        0.000000000000
+  FULL/RTN   2  N/A                        -0.000030028095       -0.018842914170       -0.000030028095       -0.018842914170
+
+
+2024-11-07:15:22:33,716 INFO     [psi4.driver.task_planner:235] PLANNING MB:  mc_level_idx=0 packet={'driver': 'energy', 'method': 'ccsd(t)', 'basis': 'aug-cc-pvdz', 'keywords': {'FREEZE_CORE': '1', 'function_kwargs': {}}}
+2024-11-07:15:22:33,716 INFO     [psi4.driver.driver_nbody:952] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  // ManyBody Setup: N-Body Levels [1, 2]//
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:22:33,716 INFO     [psi4.driver.driver_nbody:513]         Number of 1-body computations:     2
+        Number of 2-body computations:     1
+2024-11-07:15:22:33,718 INFO     [psi4.driver.driver_nbody:1014] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //       ManyBody Computations       //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:22:33,740 INFO     [psi4.driver.task_base:159] <<< JSON launch ... c2v 0.0
+2024-11-07:15:22:33,771 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:22:33,775 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=0.0
+2024-11-07:15:22:37,377 INFO     [psi4.driver.driver:502] Return energy(): -526.9698010262023
+2024-11-07:15:22:37,395 INFO     [psi4.driver.task_base:159] <<< JSON launch ... c2v 0.0
+2024-11-07:15:22:37,425 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:22:37,429 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=0.0
+2024-11-07:15:22:40,997 INFO     [psi4.driver.driver:502] Return energy(): -526.9698010262024
+2024-11-07:15:22:41,13 INFO     [psi4.driver.task_base:159] <<< JSON launch ... d2h 48.986690359165706
+2024-11-07:15:22:41,44 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:22:41,47 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=48.986690359165706
+2024-11-07:15:22:44,51 INFO     [psi4.driver.driver:502] Return energy(): -1053.9393329701613
+2024-11-07:15:22:44,68 INFO     [psi4.driver.driver_nbody:1364] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //          ManyBody Results         //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:22:44,69 INFO     [psi4.driver.driver_nbody:394] 
+   ==> N-Body: Counterpoise Corrected (CP) energies <==
+
+        n-Body     Total Energy            Interaction Energy                          N-body Contribution to Interaction Energy
+                   [Eh]                    [Eh]                  [kcal/mol]            [Eh]                  [kcal/mol]
+             1  N/A                         0.000000000000        0.000000000000        0.000000000000        0.000000000000
+  FULL/RTN   2  N/A                         0.000269082243        0.168851656847        0.000269082243        0.168851656847
+
+
+2024-11-07:15:22:44,134 INFO     [psi4.driver.task_planner:235] PLANNING MB:  mc_level_idx=0 packet={'driver': 'energy', 'method': 'ccsd(t)', 'basis': 'aug-cc-pvdz', 'keywords': {'FREEZE_CORE': '1', 'function_kwargs': {}}}
+2024-11-07:15:22:44,134 INFO     [psi4.driver.driver_nbody:952] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  // ManyBody Setup: N-Body Levels [1, 2]//
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:22:44,134 INFO     [psi4.driver.driver_nbody:513]         Number of 1-body computations:     2
+        Number of 2-body computations:     1
+2024-11-07:15:22:44,135 INFO     [psi4.driver.driver_nbody:1014] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //       ManyBody Computations       //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:22:44,158 INFO     [psi4.driver.task_base:159] <<< JSON launch ... c2v 0.0
+2024-11-07:15:22:44,190 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:22:44,193 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=0.0
+2024-11-07:15:22:47,685 INFO     [psi4.driver.driver:502] Return energy(): -526.9697732493653
+2024-11-07:15:22:47,701 INFO     [psi4.driver.task_base:159] <<< JSON launch ... c2v 0.0
+2024-11-07:15:22:47,731 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:22:47,735 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=0.0
+2024-11-07:15:22:51,226 INFO     [psi4.driver.driver:502] Return energy(): -526.9697732493661
+2024-11-07:15:22:51,243 INFO     [psi4.driver.task_base:159] <<< JSON launch ... d2h 45.38472783275646
+2024-11-07:15:22:51,273 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:22:51,276 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=45.38472783275646
+2024-11-07:15:22:54,201 INFO     [psi4.driver.driver:502] Return energy(): -1053.9396765375006
+2024-11-07:15:22:54,219 INFO     [psi4.driver.driver_nbody:1364] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //          ManyBody Results         //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:22:54,219 INFO     [psi4.driver.driver_nbody:394] 
+   ==> N-Body: Counterpoise Corrected (CP) energies <==
+
+        n-Body     Total Energy            Interaction Energy                          N-body Contribution to Interaction Energy
+                   [Eh]                    [Eh]                  [kcal/mol]            [Eh]                  [kcal/mol]
+             1  N/A                         0.000000000000        0.000000000000        0.000000000000        0.000000000000
+  FULL/RTN   2  N/A                        -0.000130038769       -0.081600559605       -0.000130038769       -0.081600559605
+
+
+2024-11-07:15:22:54,284 INFO     [psi4.driver.task_planner:235] PLANNING MB:  mc_level_idx=0 packet={'driver': 'energy', 'method': 'ccsd(t)', 'basis': 'aug-cc-pvdz', 'keywords': {'FREEZE_CORE': '1', 'function_kwargs': {}}}
+2024-11-07:15:22:54,284 INFO     [psi4.driver.driver_nbody:952] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  // ManyBody Setup: N-Body Levels [1, 2]//
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:22:54,285 INFO     [psi4.driver.driver_nbody:513]         Number of 1-body computations:     2
+        Number of 2-body computations:     1
+2024-11-07:15:22:54,286 INFO     [psi4.driver.driver_nbody:1014] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //       ManyBody Computations       //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:22:54,309 INFO     [psi4.driver.task_base:159] <<< JSON launch ... c2v 0.0
+2024-11-07:15:22:54,341 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:22:54,344 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=0.0
+2024-11-07:15:22:58,46 INFO     [psi4.driver.driver:502] Return energy(): -526.969760888571
+2024-11-07:15:22:58,63 INFO     [psi4.driver.task_base:159] <<< JSON launch ... c2v 0.0
+2024-11-07:15:22:58,94 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:22:58,97 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=0.0
+2024-11-07:15:23:01,810 INFO     [psi4.driver.driver:502] Return energy(): -526.9697608885695
+2024-11-07:15:23:01,826 INFO     [psi4.driver.task_base:159] <<< JSON launch ... d2h 42.27618483051287
+2024-11-07:15:23:01,857 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:23:01,860 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=42.27618483051287
+2024-11-07:15:23:04,917 INFO     [psi4.driver.driver:502] Return energy(): -1053.9397201418133
+2024-11-07:15:23:04,934 INFO     [psi4.driver.driver_nbody:1364] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //          ManyBody Results         //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:23:04,935 INFO     [psi4.driver.driver_nbody:394] 
+   ==> N-Body: Counterpoise Corrected (CP) energies <==
+
+        n-Body     Total Energy            Interaction Energy                          N-body Contribution to Interaction Energy
+                   [Eh]                    [Eh]                  [kcal/mol]            [Eh]                  [kcal/mol]
+             1  N/A                         0.000000000000        0.000000000000        0.000000000000        0.000000000000
+  FULL/RTN   2  N/A                        -0.000198364673       -0.124475711426       -0.000198364673       -0.124475711426
+
+
+2024-11-07:15:23:04,999 INFO     [psi4.driver.task_planner:235] PLANNING MB:  mc_level_idx=0 packet={'driver': 'energy', 'method': 'ccsd(t)', 'basis': 'aug-cc-pvdz', 'keywords': {'FREEZE_CORE': '1', 'function_kwargs': {}}}
+2024-11-07:15:23:04,999 INFO     [psi4.driver.driver_nbody:952] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  // ManyBody Setup: N-Body Levels [1, 2]//
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:23:04,999 INFO     [psi4.driver.driver_nbody:513]         Number of 1-body computations:     2
+        Number of 2-body computations:     1
+2024-11-07:15:23:05,1 INFO     [psi4.driver.driver_nbody:1014] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //       ManyBody Computations       //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:23:05,23 INFO     [psi4.driver.task_base:159] <<< JSON launch ... c2v 0.0
+2024-11-07:15:23:05,54 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:23:05,57 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=0.0
+2024-11-07:15:23:08,367 INFO     [psi4.driver.driver:502] Return energy(): -526.9697481631417
+2024-11-07:15:23:08,383 INFO     [psi4.driver.task_base:159] <<< JSON launch ... c2v 0.0
+2024-11-07:15:23:08,414 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:23:08,417 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=0.0
+2024-11-07:15:23:11,737 INFO     [psi4.driver.driver:502] Return energy(): -526.9697481631414
+2024-11-07:15:23:11,753 INFO     [psi4.driver.task_base:159] <<< JSON launch ... d2h 39.566172982403074
+2024-11-07:15:23:11,783 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:23:11,786 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=39.566172982403074
+2024-11-07:15:23:14,556 INFO     [psi4.driver.driver:502] Return energy(): -1053.9396715830417
+2024-11-07:15:23:14,574 INFO     [psi4.driver.driver_nbody:1364] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //          ManyBody Results         //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:23:14,574 INFO     [psi4.driver.driver_nbody:394] 
+   ==> N-Body: Counterpoise Corrected (CP) energies <==
+
+        n-Body     Total Energy            Interaction Energy                          N-body Contribution to Interaction Energy
+                   [Eh]                    [Eh]                  [kcal/mol]            [Eh]                  [kcal/mol]
+             1  N/A                         0.000000000000        0.000000000000        0.000000000000        0.000000000000
+  FULL/RTN   2  N/A                        -0.000175256759       -0.109975276407       -0.000175256759       -0.109975276407
+
+
+2024-11-07:15:23:14,638 INFO     [psi4.driver.task_planner:235] PLANNING MB:  mc_level_idx=0 packet={'driver': 'energy', 'method': 'ccsd(t)', 'basis': 'aug-cc-pvdz', 'keywords': {'FREEZE_CORE': '1', 'function_kwargs': {}}}
+2024-11-07:15:23:14,639 INFO     [psi4.driver.driver_nbody:952] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  // ManyBody Setup: N-Body Levels [1, 2]//
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:23:14,639 INFO     [psi4.driver.driver_nbody:513]         Number of 1-body computations:     2
+        Number of 2-body computations:     1
+2024-11-07:15:23:14,640 INFO     [psi4.driver.driver_nbody:1014] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //       ManyBody Computations       //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:23:14,662 INFO     [psi4.driver.task_base:159] <<< JSON launch ... c2v 0.0
+2024-11-07:15:23:14,694 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:23:14,697 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=0.0
+2024-11-07:15:23:17,854 INFO     [psi4.driver.driver:502] Return energy(): -526.9697354665263
+2024-11-07:15:23:17,871 INFO     [psi4.driver.task_base:159] <<< JSON launch ... c2v 0.0
+2024-11-07:15:23:17,901 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:23:17,904 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=0.0
+2024-11-07:15:23:21,58 INFO     [psi4.driver.driver:502] Return energy(): -526.9697354665268
+2024-11-07:15:23:21,75 INFO     [psi4.driver.task_base:159] <<< JSON launch ... d2h 37.182668585872776
+2024-11-07:15:23:21,105 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:23:21,108 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=37.182668585872776
+2024-11-07:15:23:23,699 INFO     [psi4.driver.driver:502] Return energy(): -1053.9396067993232
+2024-11-07:15:23:23,716 INFO     [psi4.driver.driver_nbody:1364] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //          ManyBody Results         //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:23:23,716 INFO     [psi4.driver.driver_nbody:394] 
+   ==> N-Body: Counterpoise Corrected (CP) energies <==
+
+        n-Body     Total Energy            Interaction Energy                          N-body Contribution to Interaction Energy
+                   [Eh]                    [Eh]                  [kcal/mol]            [Eh]                  [kcal/mol]
+             1  N/A                         0.000000000000        0.000000000000        0.000000000000        0.000000000000
+  FULL/RTN   2  N/A                        -0.000135866270       -0.085257371627       -0.000135866270       -0.085257371627
+
+
+2024-11-07:15:23:23,781 INFO     [psi4.driver.task_planner:235] PLANNING MB:  mc_level_idx=0 packet={'driver': 'energy', 'method': 'ccsd(t)', 'basis': 'aug-cc-pvdz', 'keywords': {'FREEZE_CORE': '1', 'function_kwargs': {}}}
+2024-11-07:15:23:23,781 INFO     [psi4.driver.driver_nbody:952] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  // ManyBody Setup: N-Body Levels [1, 2]//
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:23:23,781 INFO     [psi4.driver.driver_nbody:513]         Number of 1-body computations:     2
+        Number of 2-body computations:     1
+2024-11-07:15:23:23,782 INFO     [psi4.driver.driver_nbody:1014] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //       ManyBody Computations       //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:23:23,805 INFO     [psi4.driver.task_base:159] <<< JSON launch ... c2v 0.0
+2024-11-07:15:23:23,837 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:23:23,840 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=0.0
+2024-11-07:15:23:26,902 INFO     [psi4.driver.driver:502] Return energy(): -526.9697248182695
+2024-11-07:15:23:26,920 INFO     [psi4.driver.task_base:159] <<< JSON launch ... c2v 0.0
+2024-11-07:15:23:26,951 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:23:26,954 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=0.0
+2024-11-07:15:23:29,982 INFO     [psi4.driver.driver:502] Return energy(): -526.9697248182702
+2024-11-07:15:23:29,999 INFO     [psi4.driver.task_base:159] <<< JSON launch ... d2h 35.07001696167546
+2024-11-07:15:23:30,29 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:23:30,32 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=35.07001696167546
+2024-11-07:15:23:32,482 INFO     [psi4.driver.driver:502] Return energy(): -1053.9395504874162
+2024-11-07:15:23:32,499 INFO     [psi4.driver.driver_nbody:1364] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //          ManyBody Results         //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:23:32,500 INFO     [psi4.driver.driver_nbody:394] 
+   ==> N-Body: Counterpoise Corrected (CP) energies <==
+
+        n-Body     Total Energy            Interaction Energy                          N-body Contribution to Interaction Energy
+                   [Eh]                    [Eh]                  [kcal/mol]            [Eh]                  [kcal/mol]
+             1  N/A                         0.000000000000        0.000000000000        0.000000000000        0.000000000000
+  FULL/RTN   2  N/A                        -0.000100850877       -0.063284880509       -0.000100850877       -0.063284880509
+
+
+2024-11-07:15:23:32,564 INFO     [psi4.driver.task_planner:235] PLANNING MB:  mc_level_idx=0 packet={'driver': 'energy', 'method': 'ccsd(t)', 'basis': 'aug-cc-pvdz', 'keywords': {'FREEZE_CORE': '1', 'function_kwargs': {}}}
+2024-11-07:15:23:32,565 INFO     [psi4.driver.driver_nbody:952] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  // ManyBody Setup: N-Body Levels [1, 2]//
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:23:32,565 INFO     [psi4.driver.driver_nbody:513]         Number of 1-body computations:     2
+        Number of 2-body computations:     1
+2024-11-07:15:23:32,566 INFO     [psi4.driver.driver_nbody:1014] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //       ManyBody Computations       //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:23:32,588 INFO     [psi4.driver.task_base:159] <<< JSON launch ... c2v 0.0
+2024-11-07:15:23:32,620 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:23:32,624 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=0.0
+2024-11-07:15:23:35,687 INFO     [psi4.driver.driver:502] Return energy(): -526.9697160225551
+2024-11-07:15:23:35,703 INFO     [psi4.driver.task_base:159] <<< JSON launch ... c2v 0.0
+2024-11-07:15:23:35,734 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:23:35,737 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=0.0
+2024-11-07:15:23:38,787 INFO     [psi4.driver.driver:502] Return energy(): -526.9697160225545
+2024-11-07:15:23:38,803 INFO     [psi4.driver.task_base:159] <<< JSON launch ... d2h 33.18453217878968
+2024-11-07:15:23:38,833 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:23:38,837 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=33.18453217878968
+2024-11-07:15:23:41,287 INFO     [psi4.driver.driver:502] Return energy(): -1053.9395059993187
+2024-11-07:15:23:41,304 INFO     [psi4.driver.driver_nbody:1364] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //          ManyBody Results         //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:23:41,305 INFO     [psi4.driver.driver_nbody:394] 
+   ==> N-Body: Counterpoise Corrected (CP) energies <==
+
+        n-Body     Total Energy            Interaction Energy                          N-body Contribution to Interaction Energy
+                   [Eh]                    [Eh]                  [kcal/mol]            [Eh]                  [kcal/mol]
+             1  N/A                         0.000000000000        0.000000000000        0.000000000000        0.000000000000
+  FULL/RTN   2  N/A                        -0.000073954209       -0.046406966791       -0.000073954209       -0.046406966791
+
+
+2024-11-07:15:23:41,369 INFO     [psi4.driver.task_planner:235] PLANNING MB:  mc_level_idx=0 packet={'driver': 'energy', 'method': 'ccsd(t)', 'basis': 'aug-cc-pvdz', 'keywords': {'FREEZE_CORE': '1', 'function_kwargs': {}}}
+2024-11-07:15:23:41,370 INFO     [psi4.driver.driver_nbody:952] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  // ManyBody Setup: N-Body Levels [1, 2]//
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:23:41,370 INFO     [psi4.driver.driver_nbody:513]         Number of 1-body computations:     2
+        Number of 2-body computations:     1
+2024-11-07:15:23:41,371 INFO     [psi4.driver.driver_nbody:1014] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //       ManyBody Computations       //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:23:41,393 INFO     [psi4.driver.task_base:159] <<< JSON launch ... c2v 0.0
+2024-11-07:15:23:41,425 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:23:41,428 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=0.0
+2024-11-07:15:23:44,336 INFO     [psi4.driver.driver:502] Return energy(): -526.9697085029463
+2024-11-07:15:23:44,352 INFO     [psi4.driver.task_base:159] <<< JSON launch ... c2v 0.0
+2024-11-07:15:23:44,383 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:23:44,386 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=0.0
+2024-11-07:15:23:47,292 INFO     [psi4.driver.driver:502] Return energy(): -526.9697085029457
+2024-11-07:15:23:47,309 INFO     [psi4.driver.task_base:159] <<< JSON launch ... d2h 31.491443802320813
+2024-11-07:15:23:47,339 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:23:47,342 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=31.491443802320813
+2024-11-07:15:23:49,666 INFO     [psi4.driver.driver:502] Return energy(): -1053.9394713020677
+2024-11-07:15:23:49,683 INFO     [psi4.driver.driver_nbody:1364] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //          ManyBody Results         //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:23:49,683 INFO     [psi4.driver.driver_nbody:394] 
+   ==> N-Body: Counterpoise Corrected (CP) energies <==
+
+        n-Body     Total Energy            Interaction Energy                          N-body Contribution to Interaction Energy
+                   [Eh]                    [Eh]                  [kcal/mol]            [Eh]                  [kcal/mol]
+             1  N/A                         0.000000000000        0.000000000000        0.000000000000        0.000000000000
+  FULL/RTN   2  N/A                        -0.000054296176       -0.034071364627       -0.000054296176       -0.034071364627
+
+
+2024-11-07:15:23:49,748 INFO     [psi4.driver.task_planner:235] PLANNING MB:  mc_level_idx=0 packet={'driver': 'energy', 'method': 'ccsd(t)', 'basis': 'aug-cc-pvdz', 'keywords': {'FREEZE_CORE': '1', 'function_kwargs': {}}}
+2024-11-07:15:23:49,748 INFO     [psi4.driver.driver_nbody:952] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  // ManyBody Setup: N-Body Levels [1, 2]//
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:23:49,748 INFO     [psi4.driver.driver_nbody:513]         Number of 1-body computations:     2
+        Number of 2-body computations:     1
+2024-11-07:15:23:49,749 INFO     [psi4.driver.driver_nbody:1014] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //       ManyBody Computations       //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:23:49,772 INFO     [psi4.driver.task_base:159] <<< JSON launch ... c2v 0.0
+2024-11-07:15:23:49,803 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:23:49,807 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=0.0
+2024-11-07:15:23:52,729 INFO     [psi4.driver.driver:502] Return energy(): -526.9697021436023
+2024-11-07:15:23:52,746 INFO     [psi4.driver.task_base:159] <<< JSON launch ... c2v 0.0
+2024-11-07:15:23:52,776 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:23:52,779 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=0.0
+2024-11-07:15:23:55,712 INFO     [psi4.driver.driver:502] Return energy(): -526.9697021436026
+2024-11-07:15:23:55,728 INFO     [psi4.driver.task_base:159] <<< JSON launch ... d2h 29.962732938130472
+2024-11-07:15:23:55,758 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:23:55,762 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=29.962732938130472
+2024-11-07:15:23:58,100 INFO     [psi4.driver.driver:502] Return energy(): -1053.9394444521135
+2024-11-07:15:23:58,118 INFO     [psi4.driver.driver_nbody:1364] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //          ManyBody Results         //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:23:58,118 INFO     [psi4.driver.driver_nbody:394] 
+   ==> N-Body: Counterpoise Corrected (CP) energies <==
+
+        n-Body     Total Energy            Interaction Energy                          N-body Contribution to Interaction Energy
+                   [Eh]                    [Eh]                  [kcal/mol]            [Eh]                  [kcal/mol]
+             1  N/A                         0.000000000000        0.000000000000        0.000000000000        0.000000000000
+  FULL/RTN   2  N/A                        -0.000040164909       -0.025203860640       -0.000040164909       -0.025203860640
+
+
+2024-11-07:15:23:58,183 INFO     [psi4.driver.task_planner:235] PLANNING MB:  mc_level_idx=0 packet={'driver': 'energy', 'method': 'ccsd(t)', 'basis': 'aug-cc-pvdz', 'keywords': {'FREEZE_CORE': '1', 'function_kwargs': {}}}
+2024-11-07:15:23:58,183 INFO     [psi4.driver.driver_nbody:952] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  // ManyBody Setup: N-Body Levels [1, 2]//
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:23:58,183 INFO     [psi4.driver.driver_nbody:513]         Number of 1-body computations:     2
+        Number of 2-body computations:     1
+2024-11-07:15:23:58,184 INFO     [psi4.driver.driver_nbody:1014] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //       ManyBody Computations       //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:23:58,207 INFO     [psi4.driver.task_base:159] <<< JSON launch ... c2v 0.0
+2024-11-07:15:23:58,238 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:23:58,241 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=0.0
+2024-11-07:15:24:01,98 INFO     [psi4.driver.driver:502] Return energy(): -526.9696970014364
+2024-11-07:15:24:01,114 INFO     [psi4.driver.task_base:159] <<< JSON launch ... c2v 0.0
+2024-11-07:15:24:01,145 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:24:01,148 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=0.0
+2024-11-07:15:24:04,14 INFO     [psi4.driver.driver:502] Return energy(): -526.9696970014355
+2024-11-07:15:24:04,30 INFO     [psi4.driver.task_base:159] <<< JSON launch ... d2h 28.575569376180024
+2024-11-07:15:24:04,61 INFO     [psi4.driver.task_planner:283] PLANNING Atomic:  keywords={'FREEZE_CORE': '1', 'function_kwargs': {}}
+2024-11-07:15:24:04,64 INFO     [psi4.driver.driver:499] Compute energy(): method=ccsd(t), basis=aug-cc-pvdz, molecule=Ar2, nre=28.575569376180024
+2024-11-07:15:24:06,368 INFO     [psi4.driver.driver:502] Return energy(): -1053.9394240309662
+2024-11-07:15:24:06,385 INFO     [psi4.driver.driver_nbody:1364] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //          ManyBody Results         //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2024-11-07:15:24:06,385 INFO     [psi4.driver.driver_nbody:394] 
+   ==> N-Body: Counterpoise Corrected (CP) energies <==
+
+        n-Body     Total Energy            Interaction Energy                          N-body Contribution to Interaction Energy
+                   [Eh]                    [Eh]                  [kcal/mol]            [Eh]                  [kcal/mol]
+             1  N/A                         0.000000000000        0.000000000000        0.000000000000        0.000000000000
+  FULL/RTN   2  N/A                        -0.000030028094       -0.018842913600       -0.000030028094       -0.018842913600
+
+
