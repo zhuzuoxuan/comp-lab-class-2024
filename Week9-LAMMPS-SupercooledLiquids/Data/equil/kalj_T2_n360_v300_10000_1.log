@@ -1,0 +1,136 @@
+
+include ${pot}.lmp
+include kalj.lmp
+units lj
+atom_style atomic
+
+variable dimensions equal 3
+variable density equal 1.2
+variable fraca equal 0.8
+
+dimension ${dimensions}
+dimension 3
+
+#setup box
+variable boxlength equal exp(ln(${volume})/${dimensions})
+variable boxlength equal exp(ln(300)/${dimensions})
+variable boxlength equal exp(ln(300)/3)
+variable ntypea equal floor(${fraca}*${natoms})
+variable ntypea equal floor(0.8*${natoms})
+variable ntypea equal floor(0.8*360)
+variable bstart equal ${ntypea}+1
+variable bstart equal 288+1
+variable ntypeb equal ${natoms}-${ntypea}
+variable ntypeb equal 360-${ntypea}
+variable ntypeb equal 360-288
+
+lattice fcc ${density}
+lattice fcc 1.2
+Lattice spacing in x,y,z = 1.4938016 1.4938016 1.4938016
+region box01 block 0 ${boxlength} 0 ${boxlength} 0 ${boxlength} units box
+region box01 block 0 6.69432950082169 0 ${boxlength} 0 ${boxlength} units box
+region box01 block 0 6.69432950082169 0 6.69432950082169 0 ${boxlength} units box
+region box01 block 0 6.69432950082169 0 6.69432950082169 0 6.69432950082169 units box
+create_box 2 box01 # 2 atomtypes
+Created orthogonal box = (0 0 0) to (6.6943295 6.6943295 6.6943295)
+  1 by 1 by 2 MPI processor grid
+create_atoms 1 box
+Created 365 atoms
+  using lattice units in orthogonal box = (0 0 0) to (6.6943295 6.6943295 6.6943295)
+  create_atoms CPU = 0.001 seconds
+
+set atom ${bstart}* type 2
+set atom 289* type 2
+Setting atom values ...
+  77 settings made for type
+group extra id > ${natoms}
+group extra id > 360
+5 atoms in group extra
+delete_atoms group extra
+Deleted 5 atoms, new total = 360
+group typea type 1
+288 atoms in group typea
+group typeb type 2
+72 atoms in group typeb
+
+include ${pot}_particles.lmp
+include kalj_particles.lmp
+mass * 1.0 #  set mass 1.0 for all types
+
+pair_style lj/cut 2.5
+#pair coeffs type1 type2 eps sigma
+pair_coeff 1 1 1.0 1.00 2.5
+pair_coeff 1 2 1.5 0.80 2.0
+pair_coeff 2 2 0.5 0.88 2.2
+pair_modify shift yes
+
+print "Minimizing initial structure"
+Minimizing initial structure
+restart ${minsteps} ${basename}.final.lmprestart
+restart 10000 ${basename}.final.lmprestart
+restart 10000 equil/kalj_T2_n360_v300_10000_1.final.lmprestart
+dump 1 all atom ${dumptime} ${basename}.lammpstrj
+dump 1 all atom 10000 ${basename}.lammpstrj
+dump 1 all atom 10000 equil/kalj_T2_n360_v300_10000_1.lammpstrj
+thermo ${thermotime}
+thermo 1000
+timestep ${timestep}
+timestep 0.001
+neighbor 0.5 bin
+neigh_modify every 1 delay 0 check yes
+fix 1 all nve/limit 0.1
+run ${minsteps}
+run 10000
+Generated 0 of 1 mixed pair_coeff terms from geometric mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 3
+  ghost atom cutoff = 3
+  binsize = 1.5, bins = 5 5 5
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair lj/cut, perpetual
+      attributes: half, newton on
+      pair build: half/bin/atomonly/newton
+      stencil: half/bin/3d
+      bin: standard
+Per MPI rank memory allocation (min/avg/max) = 4.166 | 4.166 | 4.166 Mbytes
+   Step          Temp          E_pair         E_mol          TotEng         Press     
+         0   0              24.812138      0              24.812138      166.40776    
+      1000   13.231017      4.8746127      0              24.666009      86.684258    
+      2000   14.016952      3.6979077      0              24.664932      81.057792    
+      3000   13.686336      4.1940417      0              24.666519      83.511235    
+      4000   13.961452      3.7810989      0              24.665103      81.785045    
+      5000   13.147664      4.9990829      0              24.665797      86.689136    
+      6000   13.377489      4.6535555      0              24.664049      86.020642    
+      7000   13.431015      4.575618       0              24.666178      85.282895    
+      8000   13.605547      4.3134625      0              24.665093      84.057562    
+      9000   13.733295      4.1231114      0              24.665831      83.168997    
+     10000   13.816947      3.9962056      0              24.664056      82.913725    
+Loop time of 1.79651 on 2 procs for 10000 steps with 360 atoms
+
+Performance: 480933.037 tau/day, 5566.355 timesteps/s, 2.004 Matom-step/s
+99.3% CPU use with 2 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1.1965     | 1.2088     | 1.221      |   1.1 | 67.28
+Neigh   | 0.19028    | 0.19276    | 0.19525    |   0.6 | 10.73
+Comm    | 0.32581    | 0.33995    | 0.35408    |   2.4 | 18.92
+Output  | 0.0014416  | 0.0015694  | 0.0016971  |   0.3 |  0.09
+Modify  | 0.020358   | 0.020695   | 0.021032   |   0.2 |  1.15
+Other   |            | 0.03277    |            |       |  1.82
+
+Nlocal:            180 ave         185 max         175 min
+Histogram: 1 0 0 0 0 0 0 0 0 1
+Nghost:         1615.5 ave        1633 max        1598 min
+Histogram: 1 0 0 0 0 0 0 0 0 1
+Neighs:          10330 ave       10762 max        9898 min
+Histogram: 1 0 0 0 0 0 0 0 0 1
+
+Total # of neighbors = 20660
+Ave neighs/atom = 57.388889
+Neighbor list builds = 546
+Dangerous builds = 0
+Total wall time: 0:00:01
